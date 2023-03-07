@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string DNA1;
+	string DNA2;
+	int count=0;
+	
+	getline(cin, DNA1);
+	getline(cin, DNA2);
+
+	for (int i = 0; i < DNA1.length(); i++) {
+		if (DNA1[i] != DNA2[i]) {
+			count += 1;
+		}
+	}
+	cout << endl;
+	cout << "해밍코드 거리 : " << count << endl;
+	
+}
